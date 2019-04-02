@@ -33,5 +33,10 @@
     "question": "How hard is it to sleep when you're in Launch?",
     "answer": "It's so hard to sleep that you'll lose your mind.",
     "id": 7
+  },
+  {
+    "question": "Is there a lot to eat in the neighborhood?",
+    "answer": "Yes, as any Launcher will attest, the neighborhood surrounding Launch Academy has some incredible food to offer. We suggest Chicken and Rice guys!",
+    "id": 8
   }
 ]
