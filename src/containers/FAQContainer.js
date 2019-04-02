@@ -6,7 +6,6 @@ class FAQContainer extends React.Component {
     super(props)
     this.state = {
       selectedQuestion: null,
-      questions: []
     }
 
     this.toggleQuestionSelect = this.toggleQuestionSelect.bind(this)
@@ -21,7 +20,7 @@ class FAQContainer extends React.Component {
   }
 
   render() {
-    let questions = this.state.questions.map(question => {
+    let questions = this.props.questions.map(question => {
       let selected;
       if (this.state.selectedQuestion === question.id) {
         selected = true
