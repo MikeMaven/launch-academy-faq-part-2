@@ -27,10 +27,7 @@ class FormContainer extends React.Component {
 
   handleSubmit(event){
     event.preventDefault()
-    if (
-      this.validateQuestion(this.state.question) &&
-      this.validateAnswer(this.state.answer)
-    ) {
+    if (this.validateQuestion(this.state.question) & this.validateAnswer(this.state.answer)){
     let formPayload = {
       question: this.state.question,
       answer: this.state.answer
@@ -44,7 +41,7 @@ class FormContainer extends React.Component {
   validateQuestion(question){
     if (question.trim() === ''){
       let newError = { questionAdded: 'You must type a question.'}
-      this.setState({ errors: Object.assign({}, this.state.errors, newError) })
+      this.setState({ errors: Object.assign(this.state.errors, newError) })
       return false } else {
       let errorState = this.state.errors
       delete errorState.questionAdded
@@ -55,7 +52,7 @@ class FormContainer extends React.Component {
   validateAnswer(answer){
     if (answer.trim() === ''){
       let newError = { answerAdded: 'You must type an answer.'}
-      this.setState({ errors: Object.assign({}, this.state.errors, newError) })
+      this.setState({ errors: Object.assign(this.state.errors, newError) })
       return false } else {
       let errorState = this.state.errors
       delete errorState.answerAdded

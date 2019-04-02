@@ -9,7 +9,7 @@ class LauncherList extends Component {
   }
 
   componentDidMount(){
-    
+
   }
 
   render(){
